@@ -1,8 +1,9 @@
 ---
 layout: "wrapper"
+permalink: "/:site.baseurl/:title"
 ---
 {% for post in site.posts %}
-<a style="{% if page.url == post.url %}color:red;{%endif%}" href="{{post.url}}"><h3>{{post.title}}</h3></a>
+<a style="{% if page.url == post.url %}color:red;{%endif%}" href="{{ site.baseurl }}{{post.url}}"><h3>{{post.title}}</h3></a>
 {% endfor %}
 
 {% if page.title == "A new post" %}
