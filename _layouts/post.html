@@ -1,0 +1,19 @@
+---
+layout: "wrapper"
+---
+{% for post in site.posts %}
+<a style="{% if page.url == post.url %}color:red;{%endif%}" href="{{post.url}}"><h3>{{post.title}}</h3></a>
+{% endfor %}
+
+{% if page.title == "A new post" %}
+<!-- you can use 'and' and 'or' in a condition -->
+<h1>This is the one !!!</h1>
+{% else %}
+<h1>This is not the one</h1>
+{% endif %}
+
+<h1>Thi is a post</h1>
+<hr>
+<h2>{{page.title}}</h2>
+
+{{content}}

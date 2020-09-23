@@ -1,0 +1,8 @@
+- name: "Charles"
+  occupation: "web dev"
+
+- name: "Jean"
+  occupation: "Writer"
+
+- name: "Jim"
+  occupation: "Marketer"
